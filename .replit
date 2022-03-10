@@ -1,4 +1,4 @@
-entrypoint = "findNemo.js"
+entrypoint = "interviewQuestion.js"
 
 [interpreter]
 command = [
