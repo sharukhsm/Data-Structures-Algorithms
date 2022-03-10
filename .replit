@@ -1,4 +1,4 @@
-entrypoint = "interviewQuestion.js"
+entrypoint = "googleQuestion.js"
 
 [interpreter]
 command = [
