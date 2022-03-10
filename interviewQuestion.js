@@ -31,30 +31,42 @@
 
 
 
-//2. Optimizing the brute force solution. O(a+b)
-const firstArray = ['a', 'b', 'c', 'x'];
-const secondArray = ['d','e','a'];
-function compareArray2(arr1, arr2){
-  //loop through first array and create object where properties === items in the array.
-  //loop through second array and check if item in second array exists on created object.
-let map = {};
-  for(let i=0; i< arr1.length; i++){
-    if(!map[arr1[i]]){   //map[i] is false, ! to make it true.
-      const item = arr1[i]; //const item = a
-      console.log(item);
-      map[item] = true;  // a = true, is stored in map obj.
-    }
-  }
-console.log(map);
+// //2. Optimizing the brute force solution. O(a+b)
+// const firstArray = ['a', 'b', 'c', 'x'];
+// const secondArray = ['d','e','a'];
+// function compareArray2(arr1, arr2){
+//   //loop through first array and create object where properties === items in the array.
+//   //loop through second array and check if item in second array exists on created object.
+// let map = {};
+//   for(let i=0; i< arr1.length; i++){
+//     if(!map[arr1[i]]){   //map[i] is false, ! to make it true.
+//       const item = arr1[i]; //const item = a
+//       console.log(item);
+//       map[item] = true;  // a = true, is stored in map obj.
+//     }
+//   }
+// console.log(map);
 
-  for(let j=0; j<arr2.length; j++){
-   if(map[arr2[j]]){
-     return true;
-   }  
-  }
- return false;
+//   for(let j=0; j<arr2.length; j++){
+//    if(map[arr2[j]]){
+//      return true;
+//    }  
+//   }
+//  return false;
+// }
+
+// //O(a+b) cuz two seperate for loops.
+
+// console.log(compareArray2(firstArray, secondArray));
+
+
+
+//3. Js built in method for the above code for more readability.
+const firstArray = ['a', 'b', 'c', 'x'];
+const secondArray = ['d','e','m'];
+
+function compareArray3(arr1, arr2){
+  return arr1.some(item => arr2.includes(item));
 }
 
-//O(a+b) cuz two seperate for loops.
-
-console.log(compareArray2(firstArray, secondArray));
+console.log(compareArray3(firstArray, secondArray));
