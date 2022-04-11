@@ -1,4 +1,4 @@
-entrypoint = "googleQuestion.js"
+entrypoint = "arrayIntro.js"
 
 [interpreter]
 command = [

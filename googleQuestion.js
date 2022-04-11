@@ -16,4 +16,4 @@ function hasPairWithSum(arr, sum){
 
 //O(n^2) - Time complexity.
 
-console.log(hasPairWithSum([6,2,3,4],9));
+console.log(hasPairWithSum([6,2,3,4],7));
