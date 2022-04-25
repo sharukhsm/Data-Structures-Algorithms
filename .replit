@@ -1,4 +1,4 @@
-entrypoint = "arrayIntro.js"
+entrypoint = "classesInJS.js"
 
 [interpreter]
 command = [
