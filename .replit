@@ -1,4 +1,4 @@
-entrypoint = "classesInJS.js"
+entrypoint = "Arrays/reverseString.js"
 
 [interpreter]
 command = [
