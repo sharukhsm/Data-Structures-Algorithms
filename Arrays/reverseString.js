@@ -33,11 +33,14 @@ function reverse1(str){
 }
 
 function reverse2(str){
-  //split method converts string to an array
+  //split/spread operator method converts string to an array
   //join method converts an array to string
  return str.split('').reverse().join();
 }
 
+const reverse3 = str => str.split('').reverse().join();
+//here you can also use [...str] instead of str.split method.
+
 console.log(
-  reverse2('Hi My name is Sharukh')
+  reverse3('Hi My name is Sharukh')
 )
