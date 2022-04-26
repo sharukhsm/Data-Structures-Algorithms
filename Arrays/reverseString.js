@@ -16,12 +16,19 @@
 
 //Andrei solution 
 
-function reverse(str){
+function reverse1(str){
   //check input
+  //here we are checking is str is undefined/one character/is it a string.
   if (!str || str.length < 2 || typeof str !== 'string'){
     return 'hmm that is not good'
   }
-    
+   const backwards = [];
+  const totalItems = str.length - 1;
+  for(i=totalItems; i>=0; i--){
+    backwards.push(str[i]);
+  }
+  console.log(backwards)
+  return backwards.join('')
 }
 
-reverse('Hi My name is Sharukh')
+console.log(reverse1('Hi My name is Sharukh'))
