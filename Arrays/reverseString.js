@@ -4,6 +4,7 @@
 
 //My solution
 // function reverse(str){
+//split method converts string to an array
 // const str2 = str.split('')
 //   const totalItems = str2.length
 //   for(i=totalItems; i>=0; i--){
@@ -31,4 +32,12 @@ function reverse1(str){
   return backwards.join('')
 }
 
-console.log(reverse1('Hi My name is Sharukh'))
+function reverse2(str){
+  //split method converts string to an array
+  //join method converts an array to string
+ return str.split('').reverse().join();
+}
+
+console.log(
+  reverse2('Hi My name is Sharukh')
+)
