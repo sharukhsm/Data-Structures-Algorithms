@@ -5,9 +5,19 @@ class MyArray{
   }
 //Common methods/actions we have in arrays.
   get(index){
+    //here this refers to the data in the constructor fn.
     return this.data[index]
   }
+
+  //push method
+  push(item){
+    this.data[this.length] = item;
+    this.length++;
+    return this.length;
+  }
+  
 }
 
 const newArray = new MyArray();
-console.log(newArray.get(0)) //we get undefined bc there's nothing in the object.
+newArray.push('hi')
+console.log(newArray) //we get undefined bc there's nothing in the object.
