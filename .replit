@@ -1,4 +1,4 @@
-entrypoint = "Arrays/reverseString.js"
+entrypoint = "Arrays/arrayImplementaion.js"
 
 [interpreter]
 command = [
