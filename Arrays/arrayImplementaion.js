@@ -4,6 +4,7 @@ class MyArray{
     this.data = {};
   }
 //Common methods/actions we have in arrays.
+  //get method - 
   get(index){
     //here this refers to the data in the constructor fn.
     return this.data[index]
@@ -23,11 +24,29 @@ class MyArray{
     this.length--;
     return lastItem;
   }
+
+  //Let's add one last method to show why some operations in arrays are O(n).
+  delete(index){
+    const item = this.data[index];
+    this.shiftItems(index);
+    return item;
+  }
+  shiftItems(index){
+    for(let i=index; i<this.length-1; i++){
+      this.data[i] = this.data[i+1];
+    }
+    delete this.data[this.length-1];
+    this.length--;
+  }
 }
 
 const newArray = new MyArray();
 newArray.push('hi')
 newArray.push('Yo')
 newArray.push('!')
-newArray.pop();
-console.log(newArray) //we get undefined bc there's nothing in the object.
+// newArray.pop();
+newArray.delete(2)
+newArray.push('whatcha');
+newArray.push('doing');
+console.log(newArray) 
+console.log('get method -',newArray.get(0));
