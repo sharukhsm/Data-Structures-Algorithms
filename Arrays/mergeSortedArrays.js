@@ -7,7 +7,7 @@ function mergeSortedArrays(array1, array2){
   
   const mergedArray = [];
   let array1Item = array1[0];
-  let array2Item = array2[1];
+  let array2Item = array2[0];
   let i = 1;
   let j = 1;
   
