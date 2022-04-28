@@ -1,4 +1,4 @@
-entrypoint = "Arrays/arrayImplementaion.js"
+entrypoint = "Arrays/mergeSortedArrays.js"
 
 [interpreter]
 command = [
