@@ -18,8 +18,8 @@
 //Andrei solution 
 
 function reverse1(str){
-  //check input
-  //here we are checking is str is undefined/one character/is it a string.
+  //check input - Here we are checking is str is undefined/one character/is it a string.
+  
   if (!str || str.length < 2 || typeof str !== 'string'){
     return 'hmm that is not good'
   }

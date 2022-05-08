@@ -1,4 +1,5 @@
-entrypoint = "Arrays/mergeSortedArrays.js"
+entrypoint = "Hash Tables/intro.js" 
+
 
 [interpreter]
 command = [
