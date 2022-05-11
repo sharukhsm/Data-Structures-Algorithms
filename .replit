@@ -1,4 +1,4 @@
-entrypoint = "Hash Tables/intro.js" 
+entrypoint = "Hash Tables/firstRecurringChar.js" 
 
 
 [interpreter]
