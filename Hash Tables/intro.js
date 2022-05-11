@@ -10,3 +10,6 @@ let user = {
 console.log(user.age)  //O(1)
 user.spell = 'abra ka dabra' //O(1)
 user.scream(); //O(1)
+
+const a = new map();
+const b = new Sets()
