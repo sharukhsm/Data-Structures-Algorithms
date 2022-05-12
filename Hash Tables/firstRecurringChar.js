@@ -23,8 +23,17 @@ function checkFirstRecurrChar(input) {
 
 
 function checkFirstRecurrChar2(input){
-
+let map ={};
+  for(i = 0; i<input.length; i++){
+     // console.log(map[input[i]]);
+    //if the key already exist i want to return the item.
+    if(map[input[i]] !== undefined){
+      return input[i];
+    } else {
+      map[input[i]] = i;
+    }
+  }
 }
 
 
-checkFirstRecurrChar2([2,1,1,2,3,5,1,2,4]);
+console.log(checkFirstRecurrChar2([2,5,5,1,2,3,5,1,2,4])); //O(n)
