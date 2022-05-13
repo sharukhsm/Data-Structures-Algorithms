@@ -22,18 +22,20 @@ function checkFirstRecurrChar(input) {
 } //O(n^2)
 
 
+//Optimal solution
 function checkFirstRecurrChar2(input){
 let map ={};
-  for(i = 0; i<input.length; i++){
+  for(let i = 0; i<input.length; i++){
      // console.log(map[input[i]]);
     //if the key already exist i want to return the item.
-    if(map[input[i]] !== undefined){
-      return input[i];
-    } else {
-      map[input[i]] = i;
+    if(map[input[i]] !== undefined){ //if(map[3]) => map.2. Here we're checking does 2,5,1.. exist as a key. so it's simply saying map.2, bc that doesn't exist we get undefined.
+      return input[i];  //return input[3] => 2
+    } else {  //Otherwise we'll just add it to our map.
+      map[input[i]] = i; //value can be anything we'll just leave it i or true. for the objects key value sake we need to have something as a value.
     }
   }
+  return undefined;
 }
 
 
-console.log(checkFirstRecurrChar2([2,5,5,1,2,3,5,1,2,4])); //O(n)
+console.log(checkFirstRecurrChar2([2,5,1,2,3,5,1,2,4])); //O(n)
